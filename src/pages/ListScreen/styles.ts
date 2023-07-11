@@ -2,3 +2,4 @@ import styled  from 'styled-components/native';
 
 export const Container = styled.View``;
 export const Texto = styled.Text``;
+export const Botao = styled.Button``;

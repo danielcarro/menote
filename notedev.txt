@@ -24,6 +24,8 @@ npm install styled-components
 
 npm install @react-native-community/async-storage
 
+npm install --save-dev @types/react-navigation
+
 
 
 
