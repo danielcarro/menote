@@ -1,0 +1,59 @@
+app dev notes off-line
+
+bibliotecas
+react-native -> navigation, redux e redux persist, styled components, typescript, aync-storatage
+
+
+instalar react-native typescript via expo.
+link: npx create-expo-app -t expo-template-blank-typescript
+
+instalar react-navigation via expo.
+link: npx expo install react-native-screens react-native-safe-area-context
+
+
+npm install @react-navigation/native-stack
+
+
+npm install redux react-redux -- save
+
+npm install @types/react-redux -D
+
+npm install@reduxjs/toolkit
+
+npm install styled-components
+
+npm install @react-native-community/async-storage
+
+
+
+
+
+import { createNativeStackNavigator } from '@react-navigation/native-stack
+
+const Stack = createNativeStackNavigator();
+
+npm install @react-navigation/bottom-tabs  
+
+
+
+
+
+import * as React from 'react';
+import { Provider } from 'react-redux';
+import { NavigationContainer } from '@react-navigation/native';
+
+import { store } from './src/redux/reducers';
+import MainTab from './src/navigators/MainTab';
+
+
+const App = () => {
+  return (
+    <Provider store={store}>
+      <NavigationContainer>
+        <MainTab />
+      </NavigationContainer>
+    </Provider>
+  );
+}
+
+export default App;
